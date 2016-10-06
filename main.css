@@ -8,5 +8,13 @@ html, body { height: 100%; margin: 0; padding: 0; }
 
 #infowindow{
 	height: 50px;
-	width: 50px;
+	width: 100px;
+	padding: 10px;
+	border-radius: 3px;
+}
+.gm-style-iw {
+   width: 350px !important;
+   top: 0 !important;
+   left: 0 !important;
+   border-radius: 2px 2px 0 0;
 }
