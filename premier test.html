@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
-      html, body { height: 100%; margin: 0; padding: 0; }
-      #map { height: 100%; }
-    </style>
+<link href="main.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
     <div id="map"></div>
@@ -14,37 +12,41 @@ var map;
 var myLatLng;
 var contentString = 'bar';
 
-var image= 'drink-beer-jar.png';
+var image= 'images/drink-beer-jar.png';
 
 var adressesCoordinates=[
-	{lat:48.8499163,lng:2.342959999999948},
-	{lat:48.8359543,lng:2.292763700000023},
-	{lat: 48.84213319999999,lng:2.349762999999939}
+	{descr:'bar1',lat:48.8499163,lng:2.342959999999948},
+	{descr:'bar2',lat:48.8359543,lng:2.292763700000023},
+	{descr:'bar3',lat: 48.84213319999999,lng:2.349762999999939}
 	];
 
+
+
 function initMap() {
-	ENSAE={lat: 48.8246954, lng: 2.3025605999999925} 
+	ORSAY={lat: 48.862725, lng: 2.287592000000018} 
 	map = new google.maps.Map(document.getElementById('map'), {
-	center: ENSAE,
-	zoom: 15
+	center: ORSAY,
+	zoom: 12
 	});
-	for (var i=0;i<adressesCoordinates.length;i++){
-		
-		var marker=new google.maps.Marker({
-		position: adressesCoordinates[i],
-		icon:image,
-		map:map,
-		title: 'Cabinet Srs'
+	var infowindow=new google.maps.InfoWindow();
+	function placeMarker( loc ) {
+		var latLng = new google.maps.LatLng( loc['lat'], loc['lng']);
+		var marker = new google.maps.Marker({
+		  icon: image,
+		  position : latLng,
+		  map      : map
 		});
-		var infowindow=new google.maps.InfoWindow({
-			content: contentString}
-			);
+		google.maps.event.addListener(marker, 'click', function(){
+		    infowindow.close(); // Close previously opened infowindow
+		    infowindow.setContent( "<div id='infowindow'>"+ loc['descr'] +"</div>");
+		    infowindow.open(map, marker);
+		});
+	}
+  
 		
-		marker.addListener('click',function(){
-			infowindow.open(map,marker);
-			});
-		};
-	
+for(var i=0; i<adressesCoordinates.length; i++) {
+    placeMarker( adressesCoordinates[i] );
+  } 
 
 
 };

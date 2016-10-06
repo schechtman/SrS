@@ -1,0 +1,12 @@
+html, body { height: 100%; margin: 0; padding: 0; }
+#map { height: 70%; 
+		width: 70%;
+	  margin-left:auto;
+  margin-right:auto;
+  margin-top: auto;
+  position: relative;}
+
+#infowindow{
+	height: 50px;
+	width: 50px;
+}
