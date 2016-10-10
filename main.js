@@ -23,11 +23,15 @@ function initMap() {
 	    anchor: new google.maps.Point(0, 0) // anchor
 	};
 	
+	var icon_svg={ //an SvG icon marker
+		path: "images/pint.svg",
+		scale: 10};
+	
 	var infowindow=new google.maps.InfoWindow();
 	function placeMarker( loc ) {
 		var latLng = new google.maps.LatLng( loc['lat'], loc['lng']);
 		var marker = new google.maps.Marker({
-		  icon: icon,
+		  icon: icon_svg,
 		  position : latLng,
 		  map      : map
 
