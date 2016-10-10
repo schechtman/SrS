@@ -20,6 +20,7 @@ function initMap() {
 		var latLng = new google.maps.LatLng( loc['lat'], loc['lng']);
 		var marker = new google.maps.Marker({
 		  icon: image,
+		  maxWidth : 50,
 		  position : latLng,
 		  map      : map
 
