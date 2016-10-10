@@ -15,7 +15,13 @@ function initMap() {
 	disableDefaultUI: true,
 	styles: map_style
 	});
-	var infowindow=new google.maps.InfoWindow(content : 'Hi', maxWidth: 200);
+	var icon = {
+	    url: image, // url
+	    scaledSize: new google.maps.Size(50, 50), // scaled size
+	    origin: new google.maps.Point(0,0), // origin
+	    anchor: new google.maps.Point(0, 0) // anchor
+	};
+	var infowindow=new google.maps.InfoWindow();
 	function placeMarker( loc ) {
 		var latLng = new google.maps.LatLng( loc['lat'], loc['lng']);
 		var marker = new google.maps.Marker({
