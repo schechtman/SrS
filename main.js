@@ -25,7 +25,7 @@ function initMap() {
 	function placeMarker( loc ) {
 		var latLng = new google.maps.LatLng( loc['lat'], loc['lng']);
 		var marker = new google.maps.Marker({
-		  icon: image,
+		  icon: icon,
 		  position : latLng,
 		  map      : map
 
