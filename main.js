@@ -26,7 +26,7 @@ function initMap() {
 		});
 		google.maps.event.addListener(marker, 'click', function(){
 		    infowindow.close(); // Close previously opened infowindow
-		    infowindow.setContent( "<div id='infowindow'>"+ loc['Nom'] + <br /> + loc['Prix'] + "</div>");
+		    infowindow.setContent( "<div id='infowindow'>"+ loc['Nom'] + "<br />" + loc['Prix'] + "</div>");
 		    infowindow.open(map, marker);
 		});
 	}
