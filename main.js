@@ -15,12 +15,11 @@ function initMap() {
 	disableDefaultUI: true,
 	styles: map_style
 	});
-	var infowindow=new google.maps.InfoWindow();
+	var infowindow=new google.maps.InfoWindow(maxWidth : 200);
 	function placeMarker( loc ) {
 		var latLng = new google.maps.LatLng( loc['lat'], loc['lng']);
 		var marker = new google.maps.Marker({
 		  icon: image,
-		  maxWidth : 10,
 		  position : latLng,
 		  map      : map
 
