@@ -2,7 +2,7 @@ var map;
 var myLatLng;
 var contentString = 'bar';
 
-var image= 'images/drink-beer-jar.png';
+var image= 'images/pint.svg';
 
 
 
