@@ -18,7 +18,7 @@ function initMap() {
 	
 	var icon = { // Icon marker
 	    url: image, // url
-	    scaledSize: new google.maps.Size(20, 20), // scaled size
+	    scaledSize: new google.maps.Size(40, 40), // scaled size
 	    origin: new google.maps.Point(0,0), // origin
 	    anchor: new google.maps.Point(0, 0) // anchor
 	};
