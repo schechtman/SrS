@@ -31,7 +31,7 @@ function initMap() {
 	function placeMarker( loc ) {
 		var latLng = new google.maps.LatLng( loc['lat'], loc['lng']);
 		var marker = new google.maps.Marker({
-		  icon: icon,
+		  image: 'images/pint.png',
 		  position : latLng,
 		  map      : map
 
