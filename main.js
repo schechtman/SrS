@@ -5,7 +5,10 @@ var contentString = 'bar';
 var image= 'images/pint.png';
 
 
-
+function init() {
+                var input = document.getElementById('locationTextField');
+                var autocomplete = new google.maps.places.Autocomplete(input);
+            }
 
 function initMap() {
 	ORSAY={lat: 48.862725, lng: 2.287592000000018} 
