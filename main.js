@@ -47,9 +47,7 @@ function initMap() {
 		});
 	}
   
-function OpenInfowindowForMarker(index) {
-    google.maps.event.trigger(markers[index], 'click');
-}
+
 		
 for(var i=0; i<bars.length; i++) {
     placeMarker( bars[i] );
