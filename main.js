@@ -5,7 +5,12 @@ var contentString = 'bar';
 var image= 'images/pint.png';
 
 
-function init() {
+function init_adresse() {
+                var input = document.getElementById('locationTextField');
+                var autocomplete = new google.maps.places.Autocomplete(input);
+            }
+
+function init_adresse2(){
                 var input = document.getElementById('locationTextField');
                 var autocomplete = new google.maps.places.Autocomplete(input);
             }
