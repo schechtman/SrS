@@ -11,7 +11,7 @@ function init_adresse() {
             }
 
 function init_adresse2(){
-                var input = document.getElementById('locationTextField');
+                var input = document.getElementById('locationTextField2');
                 var autocomplete = new google.maps.places.Autocomplete(input);
             }
 
