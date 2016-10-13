@@ -17,10 +17,20 @@
       src="https://maps.googleapis.com/maps/api/js?key= AIzaSyC7_cIDtkSIZ3vF5l0An_20PMKudSqSEjI &callback=initMap">
     </script>
 
-    <form id="form" onsubmit="return false;">
-    <input style="position:relative; top:80%; left:5%; width:40%;" type="text" id="userInput" />
-    <input style="position:relative; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
+<div class='wrapper'>
+<form id='nameForm'>
+<div class='form-uname'>
+    <lable id='nameLable' for='nameField'>Create a username:</lable>
+    <input id='nameField' type='text' maxlength='25'> </input>
+</div> 
+<div class='form-sub'>
+    <button id='subButton' type='button'>Print your name!</button>
+</div>
 </form>
+
+<div>
+    <p id='result'></p></div>
+</div>
     
   </body>
 </html>
