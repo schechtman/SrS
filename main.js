@@ -23,7 +23,9 @@ function  placeMarkerClient() {
 	path:human,
 	scale:0.02,
 	rotation : 180,
+	color: '#cc0000',
 	fillOpacity:1
+	
 	};
 
 	
