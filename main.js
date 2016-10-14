@@ -24,21 +24,21 @@ function  placeMarkerClient() {
 	path:human,
 	scale:0.3,
 	fillOpacity:0.8
-	}
+	};
 
 	var place1 = autocomplete1.getPlace();
 	var place2=autocomplete2.getPlace();
 	new google.maps.Marker({
 		icon:human_icon,
-		  position : place1.geometry.location,
-		  map      : map
+		position : place1.geometry.location,
+		map      : map
 
 		});
 
 	new google.maps.Marker({
 		icon:human_icon,
-		  position : place2.geometry.location,
-		  map      : map
+		position : place2.geometry.location,
+		map      : map
 
 		});
 
