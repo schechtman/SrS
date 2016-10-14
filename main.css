@@ -18,3 +18,42 @@ html, body { height: 100%; margin: 0; padding: 0; }
    left: 0 !important;
    border-radius: 2px 2px 0 0;
 }
+#putPlacesButton{
+
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#button {
+
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #A5B076;
+  border: none;
+  border-radius: 8px;
+
+}
+/*
+.button:hover {background-color: #3e8e41}*/
+
+#button:active {
+  background-color: #A5B050;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+#locationTextField{   
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#locationTextField2{   
+  margin-left:auto;
+  margin-right:auto;
+}
