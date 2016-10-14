@@ -59,7 +59,7 @@ function initMap() {
 	// Svg icon
 	var icon_svg = {
 		    path: path, 
-		    scale: 0.3,
+		    scale: 0.15,
 		    fillOpacity: 0.8
 
   		};
