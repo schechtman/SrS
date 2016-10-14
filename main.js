@@ -20,6 +20,12 @@ function init_adresse2(){
 
 //place markers on clients position
 function  placeMarkerClient() {
+	var human_icon = {
+	path:human,
+	scale = 0.3,
+	fillOpacity = 0.8
+	}
+
 	var place1 = autocomplete1.getPlace();
 	var place2=autocomplete2.getPlace();
 	new google.maps.Marker({
