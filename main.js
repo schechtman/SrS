@@ -21,9 +21,9 @@ function init_adresse2(){
 function  placeMarkerClient() {
 	var human_icon = {
 	path:human,
-	scale:0.05,
-	rotation : 90,
-	fillOpacity:0.3
+	scale:0.02,
+	rotation : 180,
+	fillOpacity:1
 	};
 
 	
