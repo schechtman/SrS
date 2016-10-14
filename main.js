@@ -54,13 +54,6 @@ function initMap() {
 	styles: map_style
 	});
 	
-	var icon = { // Icon marker
-	    url: image, // url
-	    scaledSize: new google.maps.Size(40, 40), // scaled size
-	    origin: new google.maps.Point(0,0), // origin
-	    anchor: new google.maps.Point(0, 0) // anchor
-	};
-	
 	// Svg icon
 	var icon_svg = {
 		    path: path, 
