@@ -79,26 +79,6 @@ function initMap() {
 		    infowindow.open(map, marker);
 		});
 	}
-  
-
-/* Pour récupérer les adresses 
- Source : http://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-js
-function getUserName() {
-var nameField = document.getElementById('nameField').value;
-var result = document.getElementById('result');
-
-if (nameField.length < 3) {
-    result.textContent = 'Username must contain at least 3 characters';
-    //alert('Username must contain at least 3 characters');
-} else {
-    result.textContent = 'Your username is: ' + nameField;
-    //alert(nameField);
-}
-}
-
-	var subButton = document.getElementById('subButton');
-subButton.addEventListener('click', getUserName, false); 
-*/
 
 for(var i=0; i<bars.length; i++) {
     placeMarker( bars[i] );
