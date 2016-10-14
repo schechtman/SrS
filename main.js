@@ -23,6 +23,7 @@ function  placeMarkerClient() {
 	var human_icon = {
 	path:human,
 	scale:0.05,
+	rotation : 90,
 	fillOpacity:0.8
 	};
 
