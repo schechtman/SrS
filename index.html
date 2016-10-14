@@ -27,7 +27,6 @@
         <script>
         	//reset the adress boxe (to prevent erros due to cache when getting the data from boxes.. (je t'expliquerais Nico))
         	//edit : en plus ça marche pas, donc rien à expliquer.. tu vas voir le pb
-			document.getElementById("locationTextField").reset();
 			//autocompletion
             google.maps.event.addDomListener(window, 'load', init_adresse);
         </script>
@@ -41,8 +40,6 @@
  <label for="locationTextField2">Adresse de ton pote :</label>
         <input id="locationTextField2" type="text" size="50">
         <script>
-        	//reset the 2 adresses boxes (to prevent erros due to cache when getting the data from boxes.. (je t'expliquerais Nico))
-			document.getElementById("locationTextField2").reset();
 			//autocompletion
             google.maps.event.addDomListener(window, 'load', init_adresse2);
         </script>
