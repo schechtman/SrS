@@ -3,7 +3,6 @@ var myLatLng;
 var contentString = 'bar';
 var autocomplete1;
 var autocomplete2;
-var image= 'images/pint.png';
 
 
 //adresse completion
