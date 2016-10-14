@@ -22,7 +22,7 @@ function init_adresse2(){
 function  placeMarkerClient() {
 	var human_icon = {
 	path:human,
-	scale:0.3,
+	scale:0.05,
 	fillOpacity:0.8
 	};
 
