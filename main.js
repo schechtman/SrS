@@ -26,10 +26,17 @@ function  placeMarkerClient() {
 	fillOpacity:0.8
 	};
 
+	var icon_svg = {
+		    path: path, 
+		    scale: 0.3,
+		    fillOpacity: 0.8
+
+  	};
+	
 	var place1 = autocomplete1.getPlace();
 	var place2=autocomplete2.getPlace();
 	new google.maps.Marker({
-		icon:human_icon,
+		icon:icon_svg,
 		position : place1.geometry.location,
 		map      : map
 
