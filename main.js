@@ -3,19 +3,8 @@ var myLatLng;
 var contentString = 'bar';
 var autocomplete1;
 var autocomplete2;
+var map_center={lat: 48.862725, lng: 2.287592000000018} ;
 
-
-//adresse completion
-function init_adresse() {
-                var input = document.getElementById('locationTextField');
-                autocomplete1 = new google.maps.places.Autocomplete(input);
-                var place=autocomplete1.getPlace();
-            }
-//adresse completion2
-function init_adresse2(){
-                var input2 = document.getElementById('locationTextField2');
-                autocomplete2 = new google.maps.places.Autocomplete(input2);
-            }
 
 //place markers on clients position
 function  placeMarkerClient() {
@@ -48,9 +37,9 @@ function  placeMarkerClient() {
 
 			}
 function initMap() {
-	ORSAY={lat: 48.862725, lng: 2.287592000000018} 
+	
 	map = new google.maps.Map(document.getElementById('map'), {
-	center: ORSAY,
+	center: map_center,
 	zoom: 12,
 	disableDefaultUI: true,
 	styles: map_style
